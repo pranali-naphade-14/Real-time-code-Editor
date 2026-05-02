@@ -31,7 +31,7 @@ const App = () => {
         setTimeout(() => {
           setTyping("")
         }, 2000);
-    },[])
+    })
 
     socket.on("languageUpdate",(newLanguage)=>{
         setLanguage(newLanguage)
